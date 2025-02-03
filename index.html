@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Guessing Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 Color Guessing Game 🎨</h1>
+    <div class="game-instructions" data-testid="gameInstructions">
+      <p>Welcome to the Color Guessing Game! 🚀</p>
+      <p>Your goal is to match the color in the box below by selecting the correct color from the options.</p>
+      <p>Each correct guess will increase your score. Let's see how many you can get right! 🏆</p>
+    </div>
+    <div class="color-box" data-testid="colorBox"></div>
+    <div class="color-options">
+      <!-- Color buttons will be dynamically generated here -->
+    </div>
+    <p class="game-status" data-testid="gameStatus">Make your guess! 😊</p>
+    <p class="score">Score: <span data-testid="score">0</span></p>
+    <button class="new-game-button" data-testid="newGameButton">New Game</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
